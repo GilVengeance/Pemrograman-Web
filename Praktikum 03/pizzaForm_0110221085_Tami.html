@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Pizza</title>
+</head>
+
+<body style="background-color: skyblue;">
+    <main>
+        <h1 style="font-size: 22px;">PizzTami | Pizza-On-Demand</h1>
+        <p>PizzTami kini menyediakan layanan Delivery! </p>
+        <form action="https://www.blackgoosebistro.com/pizza.php" method="post" id="formpizza">
+            <fieldset style="border: 0;">
+                <legend><b>Informasi anda</b></legend>
+                <div>
+                    <label for="customername">Nama: </label>
+                    <input type="text" name="customername" id="customername">
+                </div>
+                <div>
+                    <label for="address">Alamat: </label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div>
+                    <label for="telephone">Nomor Telfon: </label>
+                    <input type="text" name="telephone" id="telephone">
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <label for="instructions">Catatan Pemesanan: </label>
+                <br>
+                <textarea maxlength="400" name="instructions" placeholder="Tidak lebih dari 400 karakter"
+                    id="instructions" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset style="border: 0;">
+                <legend>Buat Pizzamu Sendiri</legend>
+                <p>Bahan Roti (pilih salah satu):</p>
+                <div>
+                    <input id="classic-white" type="radio" name="crust" value="Classic White">
+                    <label for="classic-white">Classic White</label>
+                </div>
+                <div>
+                    <input id="multigrain" type="radio" name="crust" value="Multigrain">
+                    <label for="multigrain">Multigrain</label>
+                </div>
+                <div>
+                    <input id="cheese-stuffed-crust" type="radio" name="crust" value="Cheese-Stuffed crust">
+                    <label for="cheese-stuffed-crust">Cheese-Stuffed crust</label>
+                </div>
+                <div>
+                    <input id="gluten-free" type="radio" name="crust" value="Gluten-free">
+                    <label for="gluten-free">Gluten-free</label>
+                </div>
+            </fieldset>
+            <fieldset style="border: 0;">
+                <legend>Toppings (pilih sebanyak yang kamu mau):</legend>
+                <div>
+                    <input id="red-sauce" type="checkbox" name="toppings[]" value="Red Sauce" checked>
+                    <label for="red-sauce">Red Sauce</label>
+                </div>
+                <div>
+                    <input id="white-sauce" type="checkbox" name="toppings[]" value="White Sauce">
+                    <label for="white-sauce">White Sauce</label>
+                </div>
+                <div>
+                    <input id="mozzarella-cheese" type="checkbox" name="toppings[]" value="Mozzarella Cheese">
+                    <label for="mozzarella-cheese">Mozzarella Cheese</label>
+                </div>
+                <div>
+                    <input id="Pepperoni" type="checkbox" name="toppings[]" value="Pepperoni">
+                    <label for="Pepperoni">Pepperoni</label>
+                </div>
+                <div>
+                    <input id="mushrooms" type="checkbox" name="toppings[]" value="Peppers">
+                    <label for="mushrooms">Peppers</label>
+                </div>
+                <div>
+                    <input id="peppers" type="checkbox" name="toppings[]" value="Peppers">
+                    <label for="peppers">Peppers</label>
+                </div>
+                <div>
+                    <input id="anchovies" type="checkbox" name="toppings[]" value="Anchovies">
+                    <label for="anchovies">Anchovies</label>
+                </div>
+            </fieldset>
+            <fieldset style="border: 0;">
+                <legend>Number</legend>
+                <div>
+                    <label for="how-many-pizzas">How many pizzas: </label>
+                    <select id="how-many-pizzas" name="pizzas">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+            </fieldset>
+            </fieldset>
+            <input type="submit" value="Pesan pizza!"> <input type="reset" value="Ulang">
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+
+<body style="margin: 0; padding-left: 30px; background-color: #FAEEE0;">
+    <nav style="background-color: #DBD0C0; padding-top: 10px; padding-bottom: 10px; margin-left: -30px; color: salmon;">
+        <ul style="display: flex; list-style-type: none; text-decoration: none; gap: 10px;">
+
+            <li>
+                <h1 style="margin: 0; padding-right: 10px;">Tami Shop</h1>
+            </li>
+            <li>
+                <a href="/">Category 1</a>
+            </li>
+
+            <li>
+                <a href="/">Category 2</a>
+            </li>
+
+            <li>
+                <a href="/">Category 3</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Your Cart</h1>
+        <table style="width: 50%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th align="left"
+                        style="border-top: 1px solid black; border-bottom: 1px solid black; padding-left: 50px;">
+                        Item</th>
+                    <th align="left" style="border-top: 1px solid black; border-bottom: 1px solid black;">Price</th>
+                    <th align="left" style="border-top: 1px solid black; border-bottom: 1px solid black;">Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="display: flex; align-items: center;">
+                        <img width="200" src="http://assets.stickpng.com/images/58ee81d93545163ec1942cba.png"
+                            alt="Hoodie Hitam">
+                        <p>Black Hoodie</p>
+                    </td>
+                    <td>
+                        <b>Rp 130.000</b>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" align="right" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+                        <b>Subtotal: Rp 130.000</b></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <div class="aside"
+        style="margin: 0; float: right; width: 300px; height: 200px; align-content: center; background-color: #DBD0C0; position: relative; right: 600px;; bottom: 200px;">
+        <table style="width: 100%; border-collapse: collapse; margin: 15px;">
+            <thead>
+                <tr>
+                    <th style="text-align: left;">Summary (1 Item)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="display: flex; align-items: center;">
+                        <p>Subtotal</p>
+                    </td>
+                    <td colspan="4">
+                        <b>Rp 130.000</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td colspan="4">
+                        <b>-</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Est. Taxes</td>
+                    <td colspan="4">
+                        <b>-</b>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <b>Total</b></td>
+                    <td colspan="3"><b>Rp 130.000</b></td>
+                </tr>
+            </tfoot>
+        </table>
+        <form action="checkout_0110221085_Tami.html">
+            <button type="submit" style="width: 100%;">Checkout</button>
+        </form>
+    </div>
+    <footer style="background-color:#F9E4C8; position: fixed; bottom: 0; left: 0; width: 100%;">
+        <p style="text-align: center;">Copyright © 2021 Muhammad Gilbran Khatami</p>
+    </footer>
+</body>
+
+</html>
