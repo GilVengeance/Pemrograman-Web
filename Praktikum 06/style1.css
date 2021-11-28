@@ -1,0 +1,34 @@
+body {
+    background-color: salmon;
+}
+
+h1 {
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div {
+    width: 252px;
+    height: 150px;
+    margin: 5px;
+}
+
+.satu,
+.dua,
+.tiga {
+    width: 425px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
