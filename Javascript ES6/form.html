@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Pemesanan Tiket | Burung Puyuh Indonesia</title>
+
+  <!-- Script Soal 2 -->
+  <script src="assets/js/script.js">
+  </script>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <ul>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="kurs.html">Kurs Converter</a></li>
+      <li><a href="imgpicker.html">Img Picker</a></li>
+      <li><a href="chatbox.html">Chat</a></li>
+      <li><a href="form.html">Form</a></li>
+    </ul>
+  </div>
+
+  <div class="container5">
+    <h1>PEMESANAN TIKET</h1>
+    <label for="nama">Nama Lengkap</label><br>
+    <input type="teks" id="nama" maxlength="30"> <br>
+    <label for="email">Alamat Email</label><br>
+    <input type="email" id="email"> <br>
+    <label for="tujuan">Tujuan Keberangkatan</label><br>
+    <input type="teks" id="tujuan"> <br>
+    <label for="">Jumlah Tiket</label> <br>
+    <input type="number" id="banyak_tiket" min="1" max="10"> <br>
+    <label>Jam Keberangkatan</label> <br>
+    <input type="time" id="jam_berangkat" placeholder="hrs:mins"><br>
+
+
+    <!-- modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSaya" onclick="pesan()">
+      Pesan Tiket
+    </button>
+  </div>
+
+  <div class="modal fade" id="modalSaya" tabindex="-1" role="dialog" aria-labelledby="modalSayaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalSayaLabel">Rincian Pemesanan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div style="margin: auto;" class="modal-body">
+          <table>
+            <tbody>
+              <tr>
+                <td>Nama Pelanggan</td>
+                <td>:</td>
+                <td>
+                  <div id="hasil_nama"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td>
+                  <div id="hasil_email"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Tempat Tujuan</td>
+                <td>:</td>
+                <td>
+                  <div id="hasil_tujuan"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Jumlah Tiket</td>
+                <td>:</td>
+                <td>
+                  <div id="hasil_banyakTiket"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Jam Pemberangkatan</td>
+                <td>:</td>
+                <td>
+                  <div id="hasil_jamBerangkat"></div>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="button" class="btn btn-success">Bayar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
